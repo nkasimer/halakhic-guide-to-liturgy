@@ -1,0 +1,48 @@
+\documentclass[11pt]{article}
+\usepackage[paperheight=11in,paperwidth=8.5in,top=.7in,bottom=.7in, inner=.875in, outer=.75in, marginparsep=.1in, headsep=16pt]{geometry}
+
+\usepackage{polyglossia}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{etoolbox}
+\newtoggle{breakintorah}
+\toggletrue{breakintorah}
+\setdefaultlanguage{english}
+\setotherlanguage{hebrew}
+\usepackage{fontspec}
+\usepackage[backend=bibtex,style=authortitle-ibid]{biblatex}
+\bibliography{lit_halakhot_sources}
+\usepackage{hyperref}
+
+\setmainfont{EB Garamond}
+
+\newfontfamily\hebrewfont{Shlomo}
+
+\newcommand{\hebword}[1]{‎\begin{hebrew}\beginR #1 \endR\end{hebrew}}
+
+\newcommand{\heth}{\d{h}}
+\newcommand{\bigheth}{\d{H}}
+\newcommand{\ayin}{Ȝ}
+\newcommand{\smallayin}{ȝ}
+
+\newcommand{\amidah}{Amidah\space}
+\newcommand{\amidahnospace}{Amidah}
+\newcommand{\aliya}{aliya}
+\newcommand{\aliyot}{aliyot}
+\newcommand{\SA}{Shul\d{h}an Arukh}
+\newcommand{\arvit}{Arvit}
+
+\usepackage[parfill]{parskip}
+\begin{document}
+	
+	\title{Sefer Torah Problem Quick Reference}
+	
+	\author{Compiled by Nathan Kasimer}
+	
+	\date{}
+	
+	\maketitle
+	\Large
+\input{sefer_torah_section}
+	
+\end{document}
