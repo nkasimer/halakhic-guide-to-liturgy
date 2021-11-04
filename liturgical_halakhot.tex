@@ -4,6 +4,9 @@
 \usepackage{polyglossia}
 \usepackage{hyperref}
 \usepackage{multicol}
+\usepackage{etoolbox}
+\newtoggle{breakintorah}
+\togglefalse{breakintorah}
 \setdefaultlanguage{english}
 \setotherlanguage{hebrew}
 \usepackage{fontspec}
@@ -206,37 +209,10 @@ Al haNisim is recited on \d{H}anukka and Purim.  If forgotten, Birkat haMazon is
 %	\item 
 %\end{enumerate}
 
-\section{Problems in Sifrei Torah}
+\section{Errors in Birkat HaMazon}
 
-\subsection{What Invalidates a Sefer Torah}
 
-The following are considered errors in the Sefer Torah \parencite[24:1]{Kitzur}:
-\begin{itemize}
-	\item A missing letter that changes the meaning of the word, including grammatical gender. A change of spelling that does not affect the meaning does not invalidate the Torah, though it should be fixed \footnote{Note that\hebword{ י } can be part of the root even if it does not have an independent vowel associated with it, in which case it missing the letter would invalidate the Torah.  For example, if in the phrase \hebword{אל תירא הגר} it was spelled \hebword{תרא} the Torah is invalid \parencite*[24:1]{Kitzur}}
-	\item An extra letter (unless the mistake is between a \textit{\heth aser} and \textit{malei} spelling)
-	\item One letter split such that it looks like two letters
-	\item Two letters joined together to look like one letter
-	\item One letter substituted for another
-	\item An incorrect paragraph division, either missing or superfluous
-	\item The majority of the seam between two sheets is torn (though if no other Torah is available it may be used if the tear is in a different book of the Torah.  If it is in that book, it may be used if there is no other Torah if five seams remain)
-	\item Wax or a similar substance obscures the words of the portion being read
-\end{itemize}
-
-In a case of doubt, a child is shown the doubtful letter.  If they read it correctly, the Torah may be used, if not it is invalid.
-
-\subsection{When an Invalidation is Found}
-
-When a problem in a Sefer Torah is discovered between aliyot, the reading is continued with the next aliya from a kosher Sefer Torah from the point the previous aliya ended. If a problem is discovered in the middle of an aliya, a kosher Torah is taken out and the reading is resumed without interruption\footnote{If the mistake is in a place where the aliya may be ended (three or more verses from a paragraph break and not in the curses), customs vary. Some end the aliya there, the oleh recites the blessing, and the next aliya begins from the kosher Sefer Torah.  This is the recommendation of the Rema \parencite*[22:2 citing OC 146]{PH}.  But the default should be to do as in any other cases when an mistake is discovered mid-aliya \parencite*[24:8]{Kitzur}}. If the error occurred in the middle of a sentence, the reading in the kosher Torah should resume from the beginning of that sentence.  No new initial berakha on the aliya should be recited, and the concluding blessing should be recited as usual on the kosher Sefer Torah. If there are less than three verses remaining in the aliya, the reader should go back and repeat verses from the kosher Sefer Torah so that three verses are read from the kosher Sefer Torah \parencite*[24:8]{Kitzur}.
-
-On Shabbat, if possible, Hosafot should be added to make the remaining reading into 7 aliyot \parencite*[24:7]{Kitzur}.
-
-If the problem is discovered in Maftir, a new Torah need not be brought out.  Instead, the Maftir is completed as usual, but no concluding berakha on the aliya is recited.  This applies only when the Maftir is a portion repeated from the last aliya.  If the Maftir is from a second Torah, the rules as on other occasions apply \parencite*[78:8]{Kitzur}.
-
-On a day when multiple Sifrei Torah are used, the other scrolls already used or planned to be used should not be used to replace the invalid scroll.  Instead a third or fourth Torah should be used, if available \parencite*[78:10]{Kitzur}.
-
-If no kosher Sefer Torah is available, the readings may proceed from an invalid one, but without the blessings on the aliyot.  In such a case the berakhot on the Haftarah are not recited either \parencite*[79:10]{Kitzur}
-
-If no other Torah is available, an invalid Sefer Torah may be used if the error is not in the book currently being read.  This leniency does not apply to Shabbat afternoon \parencite*[24:10]{Kitzur}.
+\input{sefer_torah_section}
 
 \printbibliography
 
